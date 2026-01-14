@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace UnitTestingExercise
 {
     public class Calculator

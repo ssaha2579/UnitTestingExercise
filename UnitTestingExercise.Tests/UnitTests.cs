@@ -7,6 +7,29 @@ namespace UnitTestingExercise.Tests
     {
         [Theory]
         [InlineData(2, 3, 5, 10)] //Add test data <-------
+        [InlineData(0, 0, 0, 0)]
+        [InlineData(1, 2, 3, 4)]
+        [InlineData(2, 0, 1, 3)]
+        [InlineData(-2, -2, -2, -6)]
+        [InlineData(-5, -3, 8, 0)]
+
+        public void Add_Test(int num1, int num2, int num3, int expected)
+        {
+            //arrange 
+            var c = new Calculator(); 
+
+
+            //act 
+            var actual = c.Add(num1, num2, num3);
+
+            //arrange
+            Assert.Equal(expected, actual);
+        }
+        
+        
+        
+        
+        
         public void AddTest(int num1, int num2, int num3, int expected)
         {
             //Start Step 3 here:
